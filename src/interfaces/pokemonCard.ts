@@ -4,4 +4,5 @@ export default interface PokemonCard {
     id: string;
     name: string;
     images: Images;
+    supertype: string;
 }
