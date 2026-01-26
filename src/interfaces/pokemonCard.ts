@@ -5,4 +5,10 @@ export default interface PokemonCard {
     name: string;
     images: Images;
     supertype: string;
+    price: number;
+    stock: number;
+    flavorText?: string;
+    rules?: string;
+    rarity: string;
+    artist: string;
 }

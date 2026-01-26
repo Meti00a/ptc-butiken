@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&family=Roboto&display=swap');
+@import "header.css";
+@import "cardlist.css";
+@import "detailedCard.css";
+
+* {
+  margin: 0
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+button.primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 600;
+}
+
+button.primary:hover {
+  background: var(--primary-hover);
+}
+
+
+/* =========================
+   LIGHT THEME – Pokemon Cards
+   ========================= */
+.theme-light {
+  --bg: #f6f8ff;
+  --surface: #ffffff;
+  --surface-2: #eef2ff;
+  --border: #dbe2ff;
+
+  --text: #0f172a;
+  --muted: #475569;
+  --faint: #94a3b8;
+
+  --primary: #2563eb;      /* Pokemon blue */
+  --primary-hover: #1d4ed8;
+  --secondary: #eab308;    /* Pokemon yellow */
+  --danger: #dc2626;
+  --success: #16a34a;
+
+  --rarity-common: #64748b;
+  --rarity-rare: #2563eb;
+  --rarity-epic: #7c3aed;
+  --rarity-legendary: #ca8a04;
+
+  --shadow: 0 10px 25px rgba(15,23,42,.15);
+  --radius: 14px;
+}
+
+/* =========================
+   DARK THEME – Pokemon Cards
+   ========================= */
+.theme-dark {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --surface-2: #162343;
+  --border: #243457;
+
+  --text: #eaf0ff;
+  --muted: #b8c4e6;
+  --faint: #7f90bf;
+
+  --primary: #3b82f6;      /* Pokemon blue */
+  --primary-hover: #2563eb;
+  --secondary: #facc15;    /* Pokemon yellow */
+  --danger: #ef4444;
+  --success: #22c55e;
+
+  --rarity-common: #94a3b8;
+  --rarity-rare: #60a5fa;
+  --rarity-epic: #a78bfa;
+  --rarity-legendary: #fbbf24;
+
+  --shadow: 0 12px 35px rgba(0,0,0,.45);
+  --radius: 16px;
+}
+
+

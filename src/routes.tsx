@@ -1,6 +1,6 @@
 // Page-komponenter
 import Home from "./pages/Home.tsx";
-import Card from "./pages/Card.tsx";
+import Card from "./pages/DetailedCard.tsx";
 
 //Loaders
 import pokemonCardsLoader from "./utils/pokemonCardsLoader.ts";

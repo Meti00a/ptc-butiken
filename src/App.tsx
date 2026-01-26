@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useStateObject } from "./utils/useStateObject.ts";
 
 
@@ -8,7 +8,9 @@ export default function App() {
   });
 
   return <>
-    <h1>Welcome to Linus PCT-Store</h1>
+    <header>
+      <Link>Linus PCT-Store</Link>
+    </header>
     <Outlet context={stateAndSetter} />
   </>
 }

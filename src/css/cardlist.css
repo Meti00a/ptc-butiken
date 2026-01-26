@@ -1,0 +1,33 @@
+section.cardlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1vw;
+
+    .card {
+        background: var(--surface);
+        color: var(--text);
+        font-size: larger;
+        font-weight: 700;
+        border: 2px solid var(--border);
+        border-radius: var(--radius);
+        text-decoration: none;
+        padding: 5px 20px;
+        transition: transform .15s ease,
+        box-shadow .15s ease,
+        border-color .30s ease;
+
+        p {
+            margin: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .card:hover {
+        background-color: var(--surface-2);
+        border-color: var(--secondary);
+    }
+}

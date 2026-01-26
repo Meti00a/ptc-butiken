@@ -1,0 +1,18 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--surface);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--faint);
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+
+    a {
+        color: var(--secondary);
+        font-size: xx-large;
+        text-decoration: none;
+    }
+}
