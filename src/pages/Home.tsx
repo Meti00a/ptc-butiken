@@ -10,13 +10,15 @@ export default function Home() {
   const [{ filterOn }, setState] = useStateContext();
 
   return <>
-    <label>Type: &nbsp;
-      <select onChange={(element) => setState("filterOn", element.target.value)}>
-        <option value="All" selected={filterOn == "All" ? true : false}>All</option>
-        <option value="Pokémon" selected={filterOn == "Pokémon" ? true : false}>Pokemon</option>
-        <option value="Trainer" selected={filterOn == "Trainer" ? true : false}>Trainer</option>
-      </select>
-    </label>
+    <section className="filterSort">
+      <label>Type: &nbsp;
+        <select onChange={(element) => setState("filterOn", element.target.value)}>
+          <option value="All" selected={filterOn == "All" ? true : false}>All</option>
+          <option value="Pokémon" selected={filterOn == "Pokémon" ? true : false}>Pokemon</option>
+          <option value="Trainer" selected={filterOn == "Trainer" ? true : false}>Trainer</option>
+        </select>
+      </label>
+    </section>
     <CardList cards={pokemonCards} filterOn={filterOn} />
   </>
 }

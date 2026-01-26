@@ -1,3 +1,11 @@
+section.filterSort {
+    position: sticky;
+    top: 81px;
+    background-color: var(--bg);
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
 section.cardlist {
     display: flex;
     flex-direction: row;

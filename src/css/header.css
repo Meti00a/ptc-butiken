@@ -2,6 +2,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--surface);
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;

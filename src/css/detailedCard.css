@@ -1,4 +1,6 @@
 section.detailedCard {
+    margin: 0 10px;
+    
     .meny {
         display: flex;
         flex-direction: row;
