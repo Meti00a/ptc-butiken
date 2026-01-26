@@ -1,29 +1,12 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 import type PokemonCard from "../interfaces/pokemonCard"
 
-export default function Card(){
-    const { cardId } = useParams()
-    const [pokemonCards, setPokemonCards] = useState<PokemonCard[]>([])
-    const [card, setCard] = useState<PokemonCard>()
+export default function Card() {
+  // Hämtar data genom att använda routen's loader - Kolla i src/routes.tsx.
+  const card = useLoaderData() as PokemonCard;
 
-      async function getPokemonCardsData(){
-        const response = await fetch("/pokemonCards.json")
-        const result = await response.json()
-        
-        setPokemonCards(result)
-      }
-    
-      useEffect(() => {
-        getPokemonCardsData()
-      }, [])
-
-      useEffect(() => {
-        setCard(pokemonCards.find(card => card.id == cardId))
-      }, [pokemonCards])
-
-    return <>
-        <h1>Pokémon card - {card?.name}</h1>
-        <img src={card?.images.large} alt="No image" />
-    </>
+  return <>
+    <h1>Pokémon card - {card?.name}</h1>
+    <img src={card?.images.large} alt="No image" />
+  </>
 }

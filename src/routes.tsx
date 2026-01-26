@@ -1,14 +1,21 @@
-import Card from "./pages/Card";
-import Home from "./pages/Home";
+// Page-komponenter
+import Home from "./pages/Home.tsx";
+import Card from "./pages/Card.tsx";
+
+//Loaders
+import pokemonCardsLoader from "./utils/pokemonCardsLoader.ts";
+import pokemonCardByIdLoader from "./utils/pokemonCardByIdLoader.ts";
 
 const routes = [
     {
         path: "/",
-        element: <Home />
+        element: <Home />,
+        loader: pokemonCardsLoader
     },
     {
         path: "/card/:cardId",
-        element: <Card />
+        element: <Card />,
+        loader: pokemonCardByIdLoader
     },
     {
         path: "*",
