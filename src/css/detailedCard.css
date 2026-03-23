@@ -48,6 +48,7 @@ section.detailedCard {
     }
 
     .card {
+        max-height: 100vh;
         margin-top: 20px;
         padding: 30px;
         background: var(--surface);
@@ -65,7 +66,7 @@ section.detailedCard {
             display: flex;
             
             img {
-                width: 50%;
+                width: 30%;
             }
             
             .cardInfo {
