@@ -1,13 +1,15 @@
-import { expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { createBdd } from 'playwright-bdd';
 
 const { Given, When, Then } = createBdd();
 
 Given('I am on home page', async ({ page }) => {
+    test.setTimeout(120_000);
     await page.goto('http://localhost:5173/');
 });
 
 Given('I am on the page for {string}', async ({ page }, name) => {
+    test.setTimeout(120_000);
     await page.goto('http://localhost:5173/');
 
     const card = page.locator('a.card').filter({

@@ -1,4 +1,4 @@
-// Generated from: testing\features\first.feature
+// Generated from: testing/features/first.feature
 import { test } from "playwright-bdd";
 
 test.describe('Linus PCT-Store site', () => {
@@ -21,7 +21,7 @@ test.describe('Linus PCT-Store site', () => {
 
 test.use({
   $test: [({}, use) => use(test), { scope: 'test', box: true }],
-  $uri: [({}, use) => use('testing\\features\\first.feature'), { scope: 'test', box: true }],
+  $uri: [({}, use) => use('testing/features/first.feature'), { scope: 'test', box: true }],
   $bddFileData: [({}, use) => use(bddFileData), { scope: "test", box: true }],
 });
 
